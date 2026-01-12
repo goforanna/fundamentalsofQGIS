@@ -25,7 +25,7 @@ In this workshop, you will:
 
 ## Before you get started
 
-In order to follow along with this workhop, you will need to download the related data files. You can download the files from the [Data Download Instructions] () page. 
+In order to follow along with this workhop, you will need to download the related data files. You can download the files from the [Data Download Instructions](DataDownload.md) page. 
 
 If you do not have experience or basic knowledge of the following workshops, you may want to look into those before you start with Fundamentals of QGIS:
 
