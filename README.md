@@ -25,10 +25,13 @@ In this workshop, you will:
 
 ## Before you get started
 
+In order to follow along with this workhop, you will need to download the related data files. You can download the files from the [Data Download Instructions] () page. 
+
 If you do not have experience or basic knowledge of the following workshops, you may want to look into those before you start with Fundamentals of QGIS:
 
+- [QGIS Installation Guide](QGISInstallInstructions.md) (required) You will need to download and install QGIS onto your computer in order to follow along with this workshop. You can read the installation guide here.
+- [Foundations of Mapping](https://github.com/goforanna/mappingfoundations/tree/v2.0) (required) This workshop will teach you the foundational concepts of GIS that are applicable across platforms. 
 - [Data Literacies](https://github.com/DHRI-Curriculum/data-literacies) (recommended) In order to have a better understanding of the data formats we handle in this workshop, if you don't already have a foundational understanding of data formats and types, you can start by walking through our Data Literacies workshop.
-- [Foundations of Mapping](https://github.com/goforanna/mappingfoundations/tree/v2.0) (required)This workshop will teach you the foundational concepts of GIS that are applicable across platforms. 
 
 ### Ethical Considerations
 
