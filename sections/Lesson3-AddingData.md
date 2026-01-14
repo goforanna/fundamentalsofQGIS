@@ -116,7 +116,7 @@ Before we go further and play with how this data is visualized, we should export
 To do export the Noise Complaint feature layer, right-click 2024 Noise Complaints and hover over **Export**, then select **Save Features As**. 
 
 Select **ESRI Shapefile** from the Format Dropdown box. 
-For File Name, use the ellipses to navigate to the data folder for this project, and name the file 2024_Noise_Complaints. 
+For File Name, use the ellipses to navigate to the data folder for this project, and name the file 2024NoiseComplaints. 
 Select **point** for the **Geometry Type**. 
 Uncheck 'add saved file to map' and click Save. 
 
@@ -135,9 +135,9 @@ Follow the same steps for exporting the NYC Neighborhoods layer as you did for e
   <img width="592" height="661" alt="Screenshot 2026-01-14 at 12 14 48 PM" src="https://github.com/user-attachments/assets/055483c8-6caa-4454-8e03-8ed21f423485" />
 </Secret>
 
-Notice that the re-projected NYC Neighborhoods NAD layer has been added to the map at the top of the drawing order. 
+Notice that the re-projected NYC Neighborhoods NAD layer has been added to the map at the top of the drawing order. Move this layer below the Noise Complaints layer. 
 
 Remove the original NYC Neighborhoods layer so that there are only three layers in the Layers panel: 
-1. NYC Neighborhoods NAD
-2. Noise Complaints
+1. 2024 Noise Complaints
+2. NYC Neighborhoods NAD
 3. OpenStreetMap
