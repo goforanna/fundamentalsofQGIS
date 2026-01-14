@@ -1,41 +1,33 @@
 # Adding and Organizing Data
 Now its time to add our own data into the map. 
-## Adding Data: Shapefiles
-We have three sets of spatial data for this project: 
 
-1. A shapefile of the New York City Borough boundaries, 
-2. A shapefile of New York State Census Block Groups, and 
-3. A CSV of 311 Noise Complaint Data with x,y coordinates. 
+We have two sets of spatial data for this project: 
+
+1. A shapefile of the New York City Neighborhood Tabulation Areas (NTAs), which is named "geo_export_941b0fdf..."
+2. A CSV of 311 Noise Complaint Data with x,y coordinates, which is named "311_Service_Requests_from_2010_to_Present"
+   * _note: Even though the file name says all service requests 2010 to Present, the data only contains noise complaints from the first three months of 2024._
+   
+## Adding Data: Shapefiles
 
 We'll start by adding the two shapefiles and will deal with the CSV in a bit.
 
-In the Browser panel, expand the Data subfolder in the First_Project folder. Add the "geo_export_93740bf7" file into the map by double clicking. 
+In the Browser panel, expand the Data subfolder in the First_Project folder. Add the "geo_export_941b0fdf" file into the map by double clicking. 
 
 QGIS randomly assigns a fill color to the borough features, and we can change the color later. 
-Notice how the Boroughs layer was added to the Layers panel on top of the basemap. 
-Rename the Boroughs layer by right-clicking the file name in the Layers panel > selecting 'Rename Layer' > typing in 'NYC Boroughs' > and hitting enter. 
-
-### Knowledge Check
-Now we'll add the Census Block Groups shapefile, "tl_2024_36_bg." 
-
-Add the Block Groups Shapefile into the map and rename it "NYS Block Groups." 
-
-<Secret>
-<img width="1414" height="956" alt="Screenshot 2025-01-21 at 10 00 22 AM" src="https://github.com/user-attachments/assets/f5e6f7cb-e9e7-4898-8df3-f9630d867fe7" />
-Notice that this Shapefile contains data for all of New York State, which is much larger than what we need. Spatial data that you don't collect yourself will often not be at the extent you need, so later we'll practice different ways to filter and clip the data down to the components necessary to the project. 
-</Secret>
+Notice how the Neighborhoods layer was added to the Layers panel on top of the basemap. 
+Rename the Neighborhoods layer by right-clicking the file name in the Layers panel > selecting 'Rename Layer' > typing in 'NYC Neighborhoods' > and hitting enter. 
 
 ## Data Layers
 
-Since we added the NYS Block Groups most recently, QGIS automatically places the data as the topmost layer in the map canvas, and this layering correlates with the ordering in the Layers panel. This ordering is called the **drawing order**.  
+Since we added the NYC Neighborhoods layer most recently, QGIS automatically places the data as the topmost layer in the map canvas above the base map, and this layering correlates with the ordering in the Layers panel. This ordering is called the **drawing order**.  
 
-Click the checkmark to the left of NYS Block Groups. This checkmark toggles the layer visibility. It does not remove the data from the map project, it just tells QGIS to not render the data in the canvas so that you can see the layers underneath in the map canvas. 
+Click the checkmark to the left of NYC Neighborhoods. This checkmark toggles the layer visibility. It does not remove the data from the map project, it just tells QGIS to not render the data in the canvas so that you can see the layers underneath in the map canvas. 
 
-Now turn the visibility of NYS Block Groups back on. You can change the drawing order of the data layers by clicking and dragging the layers up or down in the Layers panel. Play with the drawing order of the three layers, and notice how the map canvas changes to reflect the drawing order. 
+Now turn the visibility of NYC Neighborhoods back on. You can change the drawing order of the data layers by clicking and dragging the layers up or down in the Layers panel. Play with the drawing order of the two layers, and notice how the map canvas changes to reflect the drawing order. 
 
 When you're done experimenting, place the OpenStreetMap layer at the bottom of the drawing order. 
 
-To fully remove data from the project, right-click the layer you want to remove and select 'Remove Layer.' We don't need the NYS Block Groups layer for the first map, so right-click the NYS Block Groups layer. Before we select remove, let's pause and go over some of the other options accessible with a right-click in the Layers panel: 
+To fully remove data from the project, right-click the layer you want to remove and select 'Remove Layer.' Right-click the NYC Neighborhoods layer. Before we select remove, let's pause and go over some of the other options accessible with a right-click in the Layers panel: 
 
 - **Zoom to Layer** zooms and pans the map canvas to bring the selected layer into view.
 - **Copy Layer** adds a temporary copy of the layer to your clipboard so you can paste it into other projects.
@@ -44,7 +36,15 @@ To fully remove data from the project, right-click the layer you want to remove 
 - **Set Layer Scale Visibility** allows to you set a particular scale at which QGIS will render the layer in the map canvas. This can be useful for layers that have extremely local data which might obscure other map features at a small scale. 
 - **Properties** opens the Layer Properties window, which is where you can review the metadata and access even more tools for data analysis and visualization.
 
-Now we can remove the NYS Block Groups layer. Click Remove Layer. 
+Now we can remove the NYC Neighborhoods layer. Click Remove Layer. 
+
+## Knowledge Check
+Add the NYC Neighborhoods layer back into the map from the **Browser**. 
+
+<Secret>
+Navigate the **Browser** panel to the Data folder of First_Project. Drag and drop "geo_export" into the map canvas.
+</Secret>
+
 
 ## Setting A Coordinate Reference System
 
@@ -63,22 +63,26 @@ At the top of this window is a Filter Bar where you can search for a particular 
 Spend a few moments exploring the catalog, expanding the subfolders and clicking various projections to see how the properties and previews change for each projection. (Don't click apply or OK). 
 
 
-Now its time to find the projection we need, which is **NAD 1983 (2011) StatePlane New York Long Isl FIPS 3104 Ft US**. Instead of browsing through the whole catalog to find this projection, use the Filter Bar to pare down the projections that display in the catalog. Begin to type 'NAD83' into the Filter Bar, and notice that the catalog filters accordingly, but there are still so many projections to choose from! Continue to type the rest of the projection name into the Filter Bar, and soon you should be left with just a few projections. Select **NAD_1983_2011_StatePlane_New_York_Long_Isl_FIPS_3104_Ft_US**. Notice that in the projection preview, the area in the red box is the projection's area of accuracy, and the purple box represents the current view in our map canvas. Click Apply. 
+Now its time to find the projection we need, which is **NAD 1983 (2011) StatePlane New York Long Isl FIPS 3104 Ft US**. Instead of browsing through the whole catalog to find this projection, use the Filter Bar to pare down the projections that display in the catalog. Begin to type 'NAD83' into the Filter Bar, and notice that the catalog filters accordingly, but there are still so many projections to choose from! Continue to type the rest of the projection name into the Filter Bar, and soon you should be left with just a few projections. 
+
+Select **NAD_1983_2011_StatePlane_New_York_Long_Isl_FIPS_3104_Ft_US**. 
+
+Notice that in the projection preview, the area in the red box is the projection's area of accuracy, and the purple box represents the current view in our map canvas. Click Apply. 
 
 A Dialog Window will open asking you to decide how to transform the data from the current projection (Mercator) to the selected projection (NAD83). Explaining this transformation is a bit beyond what you need to know for most projects, so usually you'll select the first operation, which is bolded to indicate the recommended option. Select the first operation, click OK to close the Dialog Window. Then click OK in the CRS Properties Window to close the window. It may look like not much has changed, but the layers have adjusted at a minute scale to conform to the NAD projection.   
 
 ## Adding Data: CSVs
 
-So far we have one polygon shapefile (NYC Boroughs) and a basemap (OpenStreetMap) added a layers into the map. It's time to add our Noise Complaints data, which is held in the CSV file. Drag the '311_Service_Requests' file from the Data folder in the Browser into the map canvas. 
+So far we have one polygon shapefile (NYC Neighborhoods) and a basemap (OpenStreetMap) added a layers into the map. It's time to add our Noise Complaints data, which is held in the CSV file. Drag the '311_Service_Requests' file from the Data folder in the Browser into the map canvas. 
 
 Nothing about the map changed! That's because CSVs are not formatted as spatial data, they're just tabular data. Notice that even though nothing changed in the map canvas, the Noise Complaints file was added into the drawing order as a **Table**, marked with a table icon.  
 ## Inspecting the Attribute Table
 
-We'll inspect the tables of our two data formats to see their differences. Open the NYC Boroughs attribute table by right-clicking the layer in the Layers Panel and selecting **Open Attribute Table**. The layer's attribute table will open in a new window. This is almost as simple as an attribute table will ever look. There are 4 fields, indicated by the four columns with field names at the top of the table: boro_code, boro_name, shape_area, and shape_leng. There are 5 features in this layer, indicated by the 5 rows. Each row contains data for one feature. So, there are five rows holding the data for the five polygon features, which are the five boroughs. The last two fields, shape_area and shape_leng hold the data that tells QGIS what the placement and shape of each feature is. These should almost nver be edited. 
+We'll inspect the tables of our two data formats to see their differences. Open the NYC Neighborhoods attribute table by right-clicking the layer in the Layers Panel and selecting **Open Attribute Table**. The layer's attribute table will open in a new window. This is almost as simple as an attribute table will ever look. There are 11 fields, indicated by the eleven columns with field names at the top of the table. Scroll to the bottom of the table and not that there are 262 rows, indicating that there are 262 features in this layer. Each row contains data for one feature--one neighborhood. So, there are 262 rows holding the data for the 262 polygon features, which are the 262 neighborhoods in New York City. The last two fields, shape_area and shape_leng hold the data that tells QGIS what the placement and shape of each feature is. These should almost never be edited. 
 
 If you need to edit other data--let's say there was a typo in one of the borough names, you can toggle editing mode by clicking the **pencil icon** in the top left corner of the attribute table window. Click the pencil icon and hover over the buttons to the right of the pencil to briefly learn about the tools for editing the Attribute Table. Be sure to not click any of these tools. Turn off editing mode by clicking the pencil icon again.  Close the Attribute Table. 
 
-Open the 311_Service_Requests Table. Just like the Boroughs attribute table, this table has fields in the columns, and has entries for every noise complaint in each row. Scroll to the right to explore the different fields, taking note of Agency, Descriptor, X Coordinate, and Y Coordinate. Close the table.
+Open the 311_Service_Requests Table. Just like the Neighborhoods attribute table, this table has fields in the columns, and has entries for every noise complaint in each row. Scroll to the right to explore the different fields, taking note of Agency, Descriptor, X Coordinate, and Y Coordinate. Close the table.
 
 
 ## Converting a CSV to Point Feature Layer
@@ -86,7 +90,7 @@ We are going to use the data in the X Coordinate and Y Coordinate fields to conv
 
 To do this, we will use just one of the many, many, many tools available for data management in QGIS. It's likely that your future projects will require that you do some learning on your own to figure out which tool is right for the job at hand. But for this workshop, we will use just a few tools. 
 
-Hover over **Layer** in the menu bar, then hover over **Add Layer**. To the right, select **Add Delimited Text Layer**.  This tool allows you to convert delimited text files into feature layers, which is exactly what we need. 
+Click **Layer** in the menu bar, then hover over **Add Layer**. To the right, select **Add Delimited Text Layer**.  This tool allows you to convert delimited text files into feature layers, which is exactly what we need. 
 
 In the Data Source Manager Window that opens, click the ellipses in the top right corner to navigate to the 311_Service_Requests CSV in your file explorer. 
 
@@ -101,15 +105,11 @@ Click Add and Close the window.
 
 <img width="1341" height="857" alt="Screenshot 2025-01-21 at 2 36 04 PM" src="https://github.com/user-attachments/assets/afbe03d9-eab4-4ca4-abe0-8e1ec136381a" />
 
-Your map should look like this, with the Noise Complaint point feature layer at the top of the drawing order. If it's not at the top, move it to the top. 
-
-<img width="1416" height="956" alt="Screenshot 2025-01-21 at 2 21 26 PM" src="https://github.com/user-attachments/assets/f01661ad-77c0-4502-868a-d99be4a47f14" />
-
-Open the Attribute Table of the 2024 Noise Complaints Layer to see that the fields and attributes were accurately converted and that there are no unexpected NULL values. Close the Attribute Table.
+Open the Attribute Table of the newly created Noise Complaints Layer to see that the fields and attributes were accurately converted and that there are no unexpected NULL values. Close the Attribute Table.
 
 Remove the 311_Service_Requests CSV table from the Layers panel. 
 
-## Exporting a Feature Layer
+## Exporting Feature Layers
 
 Before we go further and play with how this data is visualized, we should export this point feature layer for future use. An important thing to note that while we continue to change and visualize this data in the map project, the original files housed in the browser haven't changed. So, while we have the Noise Complaint layer in the map project, it doesn't exist in our browser. If we delete it or want to use it in a different project, we would have to create this layer over again. Instead, we can export the layer as a standalone file housed on your computer and accessible through the browser. 
 
@@ -121,3 +121,23 @@ Select **point** for the **Geometry Type**.
 Uncheck 'add saved file to map' and click Save. 
 
 Now expand the Data folder in the Browser to see that the point feature layer has been saved into the folder. 
+
+Later on in this workshop, we are going to combine the NYC Neighborhoods layer with the Noise Complaints layer. In order to do that, we need to make sure both layers are using the same Coordinate Reference System. Let's check the Coordinate Reference System of the NYC Neighborhoods layer by right-clicking the layer in the Layers panel, then hovering over "Layer CRS." At the top of the new drop-down menu is the Reference System that the file was created in, which is **WGS 84**. This is different from the Noise Complaints layer. The x,y coordinates used to plot the points in the Noise Complaint layer were collected in **NAD 1983 State Plane NY Long Isl FIPS 3104 US Ft**. 
+
+To ensure that these layers can be combined, we're going to the NYC Neighborhoods layer as a new layer with a **NAD 1983 State Plane NY Long Isl FIPS 3104 US Ft** as its Coordinate Reference System.
+
+## Knowledge Check
+Follow the same steps for exporting the NYC Neighborhoods layer as you did for exporting the Noise Complaints layer, with a few adjustments. 
+- Name the file "NYC_Neighborhoods_NAD"
+- Select **polygon** for the "geometry type
+- Select NAD 1983 State Plane NY Long Isl FIPS 3104 US Ft for the CRS.
+<Secret>
+  <img width="592" height="661" alt="Screenshot 2026-01-14 at 12 14 48 PM" src="https://github.com/user-attachments/assets/055483c8-6caa-4454-8e03-8ed21f423485" />
+</Secret>
+
+Notice that the re-projected NYC Neighborhoods NAD layer has been added to the map at the top of the drawing order. 
+
+Remove the original NYC Neighborhoods layer so that there are only three layers in the Layers panel: 
+1. NYC Neighborhoods NAD
+2. Noise Complaints
+3. OpenStreetMap
