@@ -1,10 +1,14 @@
 # TO DOWNLOAD AND STORE WORKSHOP DATA
 
-You will download 2 compressed foldeers and 1 compressed CSV file linked below. Please read all of these instructions before downloading. The files are called *geo_export*, *t1_2024*, and *311_Service_Requests*. Compressed (or zipped) files make it easier and faster to share big and complicated data, but once you download the files, you’ll need to decompress/un-zip/extract the folders in order to make use of the data inside.
+This workshop uses just two datasets: 
+1. A shapefile of NYC Neighborhood Tabulation Areas (NTAs)
+2. A CSV of 311 Noise Complaints filed between January and March of 2024 in NYC. 
 
-The folders contain numerous files, all of different types. It is very important that you do not attempt to rename or move any of these individual files, they’re named for QGIS to be able to read, not for humans to be able to read. QGIS knows how to package these files together into map-able data, so it’s important that these files keep their names and stay together in a single subfolder called ‘Data.’
+You will download 1 folder and 1 compressed CSV file linked below. Please read all of these instructions before downloading. The files are called *geo_export* and *311_Service_Requests*. Compressed (or zipped) files make it easier and faster to share big and complicated data, but once you download the files, you’ll need to decompress/un-zip/extract the folders in order to make use of the data inside.
 
-Moreover, when working with any data management software, but especially with mapping softwares, it’s very important that your files are organized on your computer in a way that both you AND your computer can understand and easily access. Please do not save this data folder in a subfolder of your photos folder that has pictures of your trip to Joshua Tree! And please do not leave it in your Downloads folder! Lots of errors that come up when people are learning QGIS originate in where they saved their data. Here is the workflow for best practices of data storage:
+The folder contains numerous files, all of different types. It is very important that you do not attempt to rename or move any of these individual files, they’re named for QGIS to be able to read, not for humans to be able to read. QGIS knows how to package these files together into map-able data, so it’s important that these files keep their names and stay together.
+
+Moreover, when working with any data management software, but especially with mapping softwares, it’s very important that your files are organized on your computer in a way that both you AND your computer can understand and easily access. Please do not save this data folder in a subfolder of your photos folder that has pictures of your last vacation! And please do not leave it in your Downloads folder! Lots of errors that come up when people are learning QGIS originate in where they saved their data. Here is the workflow for best practices of data storage:
 
 1. Create a new folder (on your desktop or wherever you can easily access it) to hold all of your present and future mapping projects, maybe titled ‘QGIS_Projects.’ 
 
@@ -12,7 +16,7 @@ Moreover, when working with any data management software, but especially with ma
 
 3. In the First_Project folder, create a subfolder titled "Data."  
 
-4. Within the Data folder is where you’ll save the unzipped geo_export, tl_2024, and 311_Service_Requests files.
+4. Within the Data folder is where you’ll save the unzipped geo_export and 311_Service_Requests files.
 
 [Download the QGIS data files here](data). 
 
