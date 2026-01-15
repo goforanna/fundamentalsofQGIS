@@ -31,6 +31,6 @@ Once the geoprocessing tool has finished running, a new polygon layer named Coun
 Close the Attribute Table. 
 
 
+---
 
-
-
+← [Adding Data](02-adding-data.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Visualizing Data](04-visualizing-data.md) →
