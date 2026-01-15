@@ -93,3 +93,5 @@ Now only North Harlem, the Central Upper West Side, and Lincoln Square are label
 
 <img width="1020" height="661" alt="Screenshot 2026-01-14 at 5 01 42 PM" src="https://github.com/user-attachments/assets/4287c1db-2e78-4f8b-a778-ee8f64363548" />
 
+Before we move on to creating a Print Layout, remove all other layers from the **Layers Panel** so that only the Neighborhood Complaints layer is in the drawing order.  
+
