@@ -59,3 +59,7 @@ New York City!
 
 ## Bookmarks
 Since we'll be working at the scale of New York City, we should create a **Spatial Bookmark** of this extent so that we don't have to zoom and pan to it over and over. To do this, click on the Spatial Bookmark button in the toolbar (blue bookmark with yellow star icon). In the Bookmark Editor dialog box, name the bookmark "New York City" and click Save. Now in the Browser panel, expand Spatial Bookmarks and Project Bookmarks to see that the New York City bookmark has saved. Whenever we want to return to this extent, we can click this bookmark. 
+
+---
+
+↻ [Start](../README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Adding Data](02-adding-data.md) →
