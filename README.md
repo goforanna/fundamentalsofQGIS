@@ -21,7 +21,7 @@ In this workshop, you will:
 2. [Adding and Organizing Data](sections/Lesson2-AddingData.md)
 3. [Analyzing Data](sections/Lesson3-AnalyzingData.md)
 4. [Visualizing Data](sections/Lesson4-VisualizingData.md)
-5. [Making a Map Layout](sections/Lesson5-MakingLayout.md)
+5. [Making a Map Layout](sections/Lesson5-Layout.md)
    
 ---
 
