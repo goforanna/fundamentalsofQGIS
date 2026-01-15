@@ -118,3 +118,6 @@ Keep the image export options as they are, but check "Open File After Exporting"
 
 Congratulations! You've created your very first map. This workflow of Adding and Organizing data from the Browser, Analyzing it with geoprocessing tools, Visualizing it with the symbology window, and building a Print Layout is the most standard workflow when working in any mapping platform. Now you'll be able to practice this workflow with data of your own. 
 
+---
+
+← [Visualizing Data](04-visualizing-data.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Main Page](README.md) →
