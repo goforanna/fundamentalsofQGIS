@@ -95,3 +95,6 @@ Now only North Harlem, the Central Upper West Side, and Lincoln Square are label
 
 Before we move on to creating a Print Layout, remove all other layers from the **Layers Panel** so that only the Neighborhood Complaints layer is in the drawing order.  
 
+---
+
+← [Analyzing Data](section/04-analyzing-data.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Creating a Layout](section/05-creating-layout.md) →
