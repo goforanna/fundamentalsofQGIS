@@ -1,7 +1,7 @@
 <img width="815" height="254" alt="Screenshot 2026-01-12 at 5 21 02 PM" src="https://github.com/user-attachments/assets/d4b88981-6bd0-4504-91e9-c6277eeaa0b8" />
 
 
-This workshop builds on the foundational concepts of cartography to teach you fundamentals of map creation in QGIS. You will analyze and visualize data from New York City's 311 hotline.  No mapping experience is necessary.
+This workshop builds on the foundational concepts of cartography to teach you fundamentals of map creation in QGIS. You will analyze and visualize data from New York City's 311 hotline. Using a fundamental mapping workflow, you will find the answer to the question, "In which NYC neighborhoods are the most noise complaints filed?" No mapping experience is necessary.
 
 In this workshop, you will:
  - Become familiar with the user interface of QGIS
