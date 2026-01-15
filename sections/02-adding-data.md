@@ -147,3 +147,7 @@ Remove the original NYC Neighborhoods layer so that there are only three layers 
 1. 2024 Noise Complaints
 2. NYC Neighborhoods NAD
 3. OpenStreetMap
+
+---
+
+← [Getting Oriented](01-getting-oriented.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Analyzing Data](03-analyzing-data.md) →
