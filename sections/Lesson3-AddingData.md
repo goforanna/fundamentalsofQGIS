@@ -3,9 +3,15 @@ Now its time to add our own data into the map.
 
 We have two sets of spatial data for this project: 
 
-1. A shapefile of the New York City Neighborhood Tabulation Areas (NTAs), which is named "geo_export_941b0fdf..."
-2. A CSV of 311 Noise Complaint Data with x,y coordinates, which is named "311_Service_Requests_from_2010_to_Present"
-   * _note: Even though the file name says all service requests 2010 to Present, the data only contains noise complaints from the first three months of 2024._
+## A shapefile of the New York City Neighborhood Tabulation Areas (NTAs): "geo_export_941b0fdf..."
+- This file was downloaded from [NYC Open Data](https://data.cityofnewyork.us/City-Government/2020-Neighborhood-Tabulation-Areas-NTAs-/9nt8-h7nd/about_data). NTA boundaries are used for statistical purposes only and may not reflect all local understandings or definitions of NYC neighborhoods. While they use familiar names, they aren't official neighborhood boundaries.
+
+
+## A CSV of 311 Noise Complaint Data with x,y coordinates: "311_Service_Requests_from_2010_to_Present"
+- Even though the file name says all service requests 2010 to Present, the data only contains noise complaints from the first three months of 2024.
+- The main dataset for this workshop is from [NYC Open Data](https://data.cityofnewyork.us/Social-Services/311-Noise-Complaints/p5f6-bkga/about_data) collected from NYC’s 311 call center. Some of the most popular complaints filed through 311 are about parking, noise, garbage, etc. We’ll be working with just the noise complaints in this workshop.
+
+  The 311 dataset is a great resource for anyone studying New York City. However, it is important to remember that 311 data tracks complaints, not necessarily the real conditions themselves. Because the data relies entirely on people choosing to speak up, it carries a natural bias toward the habits of those who complain. While 311 is a powerful tool for understanding city life, we must look at it critically, recognizing that this dataset shows us what people are bothered by noise by rather than a real picture of the noisiness of the city.
    
 ## Adding Data: Shapefiles
 
