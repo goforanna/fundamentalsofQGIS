@@ -97,4 +97,4 @@ Before we move on to creating a Print Layout, remove all other layers from the *
 
 ---
 
-← [Analyzing Data](section/04-analyzing-data.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Creating a Layout](section/05-creating-layout.md) →
+← [Analyzing Data](04-analyzing-data.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Creating a Layout](05-creating-layout.md) →
