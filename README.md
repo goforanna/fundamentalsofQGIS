@@ -11,17 +11,17 @@ In this workshop, you will:
 
 ---
 
-<p align="center">This workshop is estimated to take you 2.5 hours to complete.</p><p align="center"><a href="sections/Lesson1-GettingOriented.md">Get Started</a> →</p>
+<p align="center">This workshop is estimated to take you 2.5 hours to complete.</p><p align="center"><a href="sections/01-getting-oriented.md">Get Started</a> →</p>
 
 ---
 
 ## Lessons
 
-1. [Getting Oriented in QGIS](sections/Lesson1-GettingOriented.md)
-2. [Adding and Organizing Data](sections/Lesson2-AddingData.md)
-3. [Analyzing Data](sections/Lesson3-AnalyzingData.md)
-4. [Visualizing Data](sections/Lesson4-VisualizingData.md)
-5. [Making a Map Layout](sections/Lesson5-Layout.md)
+1. [Getting Oriented in QGIS](sections/01-getting-oriented.md)
+2. [Adding and Organizing Data](sections/02-adding-data.md)
+3. [Analyzing Data](sections/03-analyzing-data.md)
+4. [Visualizing Data](sections/04-visualizing-data.md)
+5. [Making a Map Layout](sections/05-creating-layout.md)
    
 ---
 
@@ -68,7 +68,7 @@ You may also want to check out a couple of projects that use the skills discusse
 
 ---
 
-<p align="center"><a href="sections/Lesson1-GettingOriented.md">Get Started</a> →</p>
+<p align="center"><a href="sections/01-getting-oriented.md">Get Started</a> →</p>
 
 ---
 
