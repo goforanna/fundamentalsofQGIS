@@ -120,4 +120,4 @@ Congratulations! You've created your very first map. This workflow of Adding and
 
 ---
 
-← [Visualizing Data](04-visualizing-data.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Main Page](README.md) →
+← [Visualizing Data](04-visualizing-data.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Main Page](https://github.com/goforanna/fundamentalsofQGIS/blob/aec6a5b62ee7615006c08719dfddee0ed67431a7/README.md) →
